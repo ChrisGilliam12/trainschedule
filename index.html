@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>trains</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    </head>
+    <body>
+            <div id = "main">
+                    <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Start time</th>
+                                <th scope="col">Next Train</th>
+                              </tr>
+                            </thead>
+                            <tbody id = "trains">
+                              
+                              
+                            </tbody>
+                          </table>
+                
+                
+            </div>
+            <div id = "addTrain">
+                <form id = "newTrain">
+                    <input id ="newTrainName">train name</input>
+                    <input id = "newTrainDestination">destination</input>
+                    <input id = "newTrainTime">first train time</input>
+                    <input id = "newTrainFrequency">frequency</input>
+                    <button id = "submit">add train</button>
+        
+                </form>
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA7UJhyYbZjgQophBQihApCGTjijf_DXR4",
+    authDomain: "train-87d27.firebaseapp.com",
+    databaseURL: "https://train-87d27.firebaseio.com",
+    projectId: "train-87d27",
+    storageBucket: "train-87d27.appspot.com",
+    messagingSenderId: "534150097190",
+    appId: "1:534150097190:web:d518caa7faa96d0975f9e7",
+    measurementId: "G-Q0GRC8DHYD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+        
+                <script src ="./js/app.js"></script>
+    </body>
+</html>
